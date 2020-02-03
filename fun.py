@@ -4,13 +4,13 @@ def chartotext(x):
     '''
     letters = []
     for element in x:
-            # this separates the individual character values intro single digits
+        # this separates the individual character values intro single digits
         val = 0
         for one in element:
             h = element.find(one)
             val += (int(one) * (2**h))
             letters.append(val)
-    return letters
+        return letters
 
 def bintotext(a):
     '''
