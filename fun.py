@@ -30,7 +30,11 @@ def bintotext(a):
                  
 x = [1001010, 1101111]
 y = chartotext(bintotext(x))
-z = [i[0:3] for i in x]
+z =[]
+for i in x:
+    a = str(i)
+    b = a[0:3]
+    z.append(int(b))
 
 words = {
     'code': y,
