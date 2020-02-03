@@ -1,4 +1,5 @@
 import pandas as pd 
+from pd import DataFrame as DF
 
 def chartotext(x):
     '''
@@ -35,4 +36,5 @@ words = {
     'code': y
 }
 
-print(words)
+# creating a dataframe to be converted to csv
+df = DF(words, columns = ['code'])
