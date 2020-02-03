@@ -6,11 +6,12 @@ def chartotext(x):
     for element in x:
         # this separates the individual character values intro single digits
         val = 0
+        h = 0
         for one in element:
-            h = element.find(one)
             val += (int(one) * (2**h))
-            letters.append(val)
-        return letters
+            h += 1
+        letters.append(val)
+    return letters
 
 def bintotext(a):
     '''
