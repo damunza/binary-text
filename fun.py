@@ -1,3 +1,5 @@
+import panda as pd 
+
 def chartotext(x):
     '''
     a function that converts the processe characters into text codes 
@@ -8,7 +10,7 @@ def chartotext(x):
         val = 0
         h = 0
         for one in element:
-            val += (int(one) * (2**h))
+            val += int(one) * (2**h)
             h += 1
         letters.append(val)
     return letters
