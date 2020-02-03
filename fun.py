@@ -30,4 +30,9 @@ def bintotext(a):
                  
 x = [1001010, 1101111]
 y = chartotext(bintotext(x))
-print(y)
+
+words = {
+    'code': y
+}
+
+print(words)
