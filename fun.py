@@ -30,13 +30,15 @@ def bintotext(a):
                  
 x = [1001010, 1101111]
 y = chartotext(bintotext(x))
+z = [i[0:3] for i in x]
 
 words = {
-    'code': y
+    'code': y,
+    'case': z
 }
 
 # creating a dataframe to be converted to csv
-df = DF(words, columns = ['code'])
+df = DF(words, columns = ['case','code'])
 export = df.to_csv(r'~/Documents/Fun/letters.csv')
 # confirming the file has been made
 print(df)
