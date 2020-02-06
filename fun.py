@@ -28,7 +28,7 @@ def bintotext(a):
         # a list of all the bionarys that have already been processed 
     return characters
                  
-x = [1001010, 1101111]
+x = [1100010,1100101,1110010,1011111,1010011,110010,1100011,1110101,1110010,1101001,1110100,1111001,100000,1001000,1110101,1100010]
 y = chartotext(bintotext(x))
 z =[]
 for i in x:
