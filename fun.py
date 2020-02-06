@@ -1,3 +1,4 @@
+import subprocess
 from pandas import DataFrame as DF
 
 def chartotext(x):
@@ -46,3 +47,5 @@ df = DF(words, columns = ['case','code'])
 export = df.to_csv(r'~/Documents/Fun/letters.csv')
 # confirming the file has been made
 print(df)
+
+subprocess.call("go run main.go", shell=True)
