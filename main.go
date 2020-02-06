@@ -24,6 +24,16 @@ func main(){
 		//reading each csv entry
 		record, err := codes.Read() // because codes is an instance of csv.Newreader
 		// check if the program has finished reading
+		if err == io.EOF{
+			break
+		}
+		// checking to see if the data has been read 
+		if err != nil{
+			log.Fatal(err)
+		}
+		// printing the output
+		fmt.Printf("case: %s letter%s\n", record[1], record[2]) 
+		// started with index 1 instead of 0 because 0 is the indexing column
 	}
 	
 }
