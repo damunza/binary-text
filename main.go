@@ -22,6 +22,8 @@ func main(){
 	// creating a map from the processed csv
 	for{
 		//reading each csv entry
+		record, err := codes.Read() // because codes is an instance of csv.Newreader
+		// check if the program has finished reading
 	}
 	
 }
