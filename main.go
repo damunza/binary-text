@@ -15,9 +15,17 @@ func main(){
 	if err != nil{
 		log.Fatalln("couldn't open csv file")
 	}
+
+	//creating a variable that can read the encoded file resulting from opening a csv file
+	codes := csv.NewReader(words)
+
+	// creating a map from the processed csv
+	for{
+		//reading each csv entry
+	}
 	
 }
 
-func translate(x){
+// func translate(x){
 
-}
+// }
