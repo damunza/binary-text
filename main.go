@@ -9,6 +9,11 @@ import(
 )
 
 func main(){
+	
+	
+}
+
+func openCsv(){
 	// opening the csv file
 	words, err := os.Open("letters.csv")
 	// if it fails to open create a new error message put in brackets
@@ -35,9 +40,4 @@ func main(){
 		fmt.Printf("case: %s letter%s\n", record[1], record[2]) 
 		// started with index 1 instead of 0 because 0 is the indexing column
 	}
-	
 }
-
-// func translate(x){
-
-// }
